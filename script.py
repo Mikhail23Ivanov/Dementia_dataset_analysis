@@ -18,8 +18,12 @@ df.hist()
 print(df.isna().sum())
 print(len(df))
 
-# plt.savefig("./figures/")
+print(set(df["Prescription"].tolist()),set(df["Chronic_Health_Conditions"].tolist()))
+print(df)
+df = pd.get_dummies(df, columns=["Prescription", "Chronic_Health_Conditions"])
+df = pd.get_dummies(df, drop_first=True)
 
+print(df.dtypes)
 
-
+df.to_pickle("./data/dementia_one_hot_encoded.pkl")
 
