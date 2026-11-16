@@ -20,3 +20,8 @@ PCA/UMAP
 
 
 
+
+reference muss nicht sein / einfach Textbook fur PCA geben als referenz
+
+:
+
